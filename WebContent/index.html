@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Information Form</title>
+</head>
+<body>
+
+    <h1>Person Information</h1>
+
+    <form action="/ServletTP/FormServlet" method="POST">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+
+        <label for="birthDate">Birth Date (mm/dd/yyyy):</label>
+        <input type="text" id="birthDate" name="birthDate"
+               placeholder="mm/dd/yyyy"
+               pattern="(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}"
+               required>
+        <br><br>
+
+        <p>Sex:</p>
+
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <hr>
+
+<h2>Cookie Operations</h2>
+
+<p><a href="ReadCookie">Read my cookies</a></p>
+
+<p><a href="VisitCounter">Count my visits</a></p>
+
+</body>
+</html>
